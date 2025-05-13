@@ -4,8 +4,8 @@
     "module": "NodeNext", // Enables top-level await + native Node modules
     "moduleResolution": "NodeNext",
     "lib": ["ES2020"],
-    "outDir": "./dist", // Compiled output directory
-    "rootDir": "./", // Root of your TS files
+    "outDir": "./bin", // Compiled output directory
+    "rootDir": "./src", // Root of your TS files
     "declaration": true, // Generate .d.ts types
     "esModuleInterop": true, // Allows mixing CJS and ESM
     "forceConsistentCasingInFileNames": true,

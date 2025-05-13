@@ -5,6 +5,7 @@
   "bin": {
     "ctgen": "./bin/ctgen.js"
   },
+  "main": "./bin/ctgen.js",
   "type": "module",
   "scripts": {
     "dev": "tsx ./bin/ctgen.ts",
