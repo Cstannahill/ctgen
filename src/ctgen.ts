@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 import { Command } from "commander";
-import { scaffoldNextStructure } from "../src/generators/scaffoldNextStructure.js";
-import { scaffoldDotnetStructure } from "../src/generators/scaffoldDotnetStructure.js";
+import { scaffoldNextStructure } from "./generators/scaffoldNextStructure.js";
+import { scaffoldDotnetStructure } from "./generators/scaffoldDotnetStructure.js";
 import type {
   ScaffoldNextOptions,
   ScaffoldDotnetOptions,
-} from "../src/types/options.js";
+} from "./types/options.js";
 import inquirer from "inquirer";
 import path from "path";
 

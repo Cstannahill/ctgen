@@ -3,25 +3,26 @@
   "version": "1.0.0",
   "description": "CLI tool to scaffold Next.js and .NET project structures.",
   "bin": {
-    "ctgen": "./bin/ctgen.js"
+    "ctgen": "./dist/ctgen.js"
   },
-  "main": "./bin/ctgen.js",
+  "main": "./dist/ctgen.js",
   "type": "module",
   "scripts": {
-    "dev": "tsx ./bin/ctgen.ts",
+    "dev": "tsx ./src/ctgen.ts",
     "build": "tsc",
-    "start": "node ./bin/ctgen.js",
+    "start": "node ./dist/ctgen.js",
     "lint": "eslint . --ext .ts",
-    "prepare": "npm run build"
+    "clean": "rimraf ./dist",
+    "prepublishOnly": "npm run clean && npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/ctgen.git"
+    "url": "https://github.com/cstannahill/ctgen.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/ctgen/issues"
+    "url": "https://github.com/cstannahill/ctgen/issues"
   },
-  "homepage": "https://github.com/yourusername/ctgen#readme",
+  "homepage": "https://github.com/cstannahill/ctgen#readme",
   "keywords": [
     "cli",
     "scaffold",
