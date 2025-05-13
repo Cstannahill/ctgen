@@ -1,0 +1,55 @@
+{
+  "name": "ctgen",
+  "version": "1.0.0",
+  "description": "CLI tool to scaffold Next.js and .NET project structures.",
+  "bin": {
+    "ctgen": "./bin/ctgen.js"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "tsx ./bin/ctgen.ts",
+    "build": "tsc",
+    "start": "node ./bin/ctgen.js",
+    "lint": "eslint . --ext .ts",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ctgen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/ctgen/issues"
+  },
+  "homepage": "https://github.com/yourusername/ctgen#readme",
+  "keywords": [
+    "cli",
+    "scaffold",
+    "typescript",
+    "nextjs",
+    "dotnet",
+    "project-generator",
+    "codegen",
+    ".net",
+    "csharp",
+    "starter",
+    "template"
+  ],
+  "author": "Christian T.",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "inquirer": "^12.6.1",
+    "pg": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.9",
+    "@types/pg": "^8.15.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.3.3"
+  }
+}
